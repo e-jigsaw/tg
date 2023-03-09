@@ -14,6 +14,14 @@ bot.on(message("text"), (ctx) => {
     console.log(ctx.update);
   }
 });
+bot.on(message("sticker"), (ctx) => {
+  if (
+    ctx.update.message.chat.id === PROD_ROOM ||
+    ctx.update.message.chat.id === DEV_ROOM
+  ) {
+    console.log(ctx.update);
+  }
+});
 
 bot.launch({
   webhook: {

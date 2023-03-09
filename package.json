@@ -7,6 +7,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hono/node-server": "^0.3.0",
+    "hono": "^3.0.3",
     "telegraf": "^4.12.1"
   },
   "devDependencies": {
